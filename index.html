@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+		<title>flex</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script>
+        (function () {
+            function changeRootFont() {
+                // 750 后续再弄 方便同学们计算
+                var designWidth = 750, rem2px = 100;
+                var deviceWidth = window.innerWidth;
+                if ( deviceWidth < 750 ) {
+                    document.documentElement.style.fontSize =
+                        ((window.innerWidth / designWidth) * rem2px) + 'px';
+                } else {
+                    document.documentElement.style.fontSize = '100px';
+                }
+            }
+            changeRootFont();
+            window.addEventListener('resize', changeRootFont, false);
+        })();
+    </script>
+	</head>
+	<body>
+		<!--头-->
+		<header class="header">
+			<img src="img/index/header/qrcode.png" class="header-icon-qrcode">
+			<div class="search-box">
+				<img src="img/index/header/search.png">
+				<input type="text" class="search-input" placeholder="输入商户，地点" />
+			</div>
+			<img src="img/index/footer/user.jpg" class="header-icon-user" />
+		</header>
+		<img src="img/index/slider/slider1.png" class="main-slider">
+		<!--导航-->
+		<ul class="nav">
+			<li>
+				<a>
+					<img src="img/index/nav/1.png">
+					<p>品牌联盟</p>
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="img/index/nav/2.png">
+					<p>今日热点</p>
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="img/index/nav/3.png">
+					<p>特色服务</p>
+				</a>
+			</li>
+			<li>
+				<a>
+					<img src="img/index/nav/4.png">
+					<p>我要参与</p>
+				</a>
+			</li>
+		</ul>
+		<div class="hot-wrap">
+			<div class="item-title">
+				<h3 class="item-title-text">热销商品</h3>
+				<a href="#" class="item-title-a">更多>></a>
+			</div>
+			<ul class="hot-inner-one">
+				<li>
+					<img src="img/index/hot/1.png">
+				</li>
+				<li>
+					<img src="img/index/hot/2.png" />
+				</li>
+				<li>
+					<img src="img/index/hot/3.png" />
+				</li>
+				<li>
+					<img src="img/index/hot/4.png" />
+				</li>
+			</ul>
+			<ul class="hot-inner-two">
+				<li>
+					<img src="img/index/hot/5.png" />
+				</li>
+				<li>
+					<img src="img/index/hot/6.png" />
+				</li>
+				<li>
+					<img src="img/index/hot/7.png" />
+				</li>
+				<li>
+					<img src="img/index/hot/8.png" />
+				</li>
+			</ul>
+		</div>
+		<div class="hot-refer-wrap">
+			<div class="item-title">
+				<h3 class="item-title-text">热门资讯</h3>
+				<a href="#" class="item-title-a">更多>></a>
+			</div>
+			<ul class="hot-refer-list">
+				<li>
+					<img src="img/index/hotRefer/1.jpg">
+					<div class="item-detail">
+						<h4 class="price-item-title">蛋糕培训</h4>
+						<p class="detail">[韦曲西街]报名学习火热进行中，提供全部餐具</p>
+						<p class="item-btn">
+							<span class="price">￥89</span>
+							<span class="date-up">截止：2016年12月01日</span>
+						</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/index/hotRefer/2.jpg">
+					<div class="item-detail">
+						<h4 class="price-item-title">蛋糕培训</h4>
+						<p class="detail">[韦曲西街]报名学习火热进行中，提供全部餐具</p>
+						<p class="item-btn">
+							<span class="price">￥89</span>
+							<span class="date-up">截止：2016年12月01日</span>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="best-features">
+			<div class="item-title">
+				<h3 class="item-title-text">最具特色</h3>
+				<a href="#" class="item-title-a">更多>></a>
+			</div>
+			<ul class="best-one">
+				<!--*-->
+				<li>
+					<img src="img/index/bestFeature/1.png">
+					<span class="best-title">地方美食</span>
+				</li>
+				<li>
+					<img src="img/index/bestFeature/2.png">
+					<span class="best-title">特色农产品</span>
+				</li>
+			</ul>
+			<ul class="best-one">
+				<li>
+					<img src="img/index/bestFeature/1.png">
+					<span class="best-title">地方美食</span>
+				</li>
+				<li>
+					<img src="img/index/bestFeature/2.png">
+					<span class="best-title">特色农产品</span>
+				</li>
+			</ul>
+		</div>
+		<ul class="footer-list">
+			<li>
+				<img src="img/index/footer/home.jpg">
+			</li>
+			<li>
+				<img src="img/index/footer/shopping.jpg">
+			</li>
+			<li>
+				<img src="img/index/footer/cross.jpg">
+			</li>
+			<li>
+				<img src="img/index/footer/message.jpg">
+			</li>
+			<li>
+				<img src="img/index/footer/user.jpg">
+			</li>
+		</ul>
+	</body>
+</html>
